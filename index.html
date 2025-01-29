@@ -2,121 +2,140 @@
 <html lang="en" data-theme="Tyler">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
-    <link href="./static/styles.css" rel="stylesheet">
-    <title>Welcome to Tyland</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://unpkg.com/htmx.org@1.9.10"></script>
+	<link href="/static/styles.css" rel="stylesheet">
+	<title>Welcome to Tyland</title>
 </head>
 
 <body class="bg-base-300">
-    <div hx-boost="true" class="navbar bg-base-200 shadow-sm pl-10 pr-10 sticky top-0">
-        <div class="navbar-start">
-            <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden"><svg xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h8m-8 6h16"></path>
-                    </svg></div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./research.html">Projects</a></li>
-                    <li><a href="./papers.html">Papers</a></li>
-                    <li><a href="./cv.html">CV</a></li>
-                </ul>
-            </div>
-            <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-                <div class="w-10 rounded-full ring-primary ring-offset-base-100 ring ring-offset-2"><img
-                        alt="Tailwind CSS Navbar component" src="./static/drumming_profile.JPG"></div>
-            </div><a href="/" class="btn btn-ghost text-xl">Tyland</a>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-                <li><a href="/about">About</a></li>
-                <li><a href="/projects">Projects</a></li>
-                <li><a href="/papers">Papers</a></li>
-                <li><a href="/cv">CV</a></li>
-            </ul>
-        </div>
-        <div class="navbar-end"><a class="btn btn-primary">Contact Me!</a></div>
-    </div>
-    <div class="hero bg-base-300 min-h-screen">
-        <div class="hero-content flex-col items-center lg:flex-row">
-            <div class="ring-primary ring-offset-base-100 ring rounded-lg ring-4"><img
-                    src="./static/drumming_profile.JPG" class="max-w-sm rounded-lg shadow-2xl size-80"></div>
-            <div class="p-4">
-                <h1 class="text-5xl font-bold text-center lg:text-left">Developing Compositional Approaches to
-                    Optimization, Machine Learning, and Control Theory</h1>
-                <p class="py-6 text-justify">My name is Tyler Hanks, and I am a fourth year computer science PhD student
-                    at the University of Florida. I work as a graduate research assistant in the GATAS Lab led by Dr.
-                    James Fairbanks. My research primarily focuses on applying category theory and sheaf theory to
-                    develop novel frameworks and algorithms for distributed optimization, machine learning, and optimal
-                    control. My research is funded by the NSF GRFP. Check out my research (and other) projects!</p>
-                <p class="text-center lg:text-left"><button class="btn btn-primary"
-                        onclick="document.getElementById('target-section').scrollIntoView({behavior: 'smooth'})">Projects</button>
-                </p>
-            </div>
-        </div>
-    </div><!-- Add this target section -->
-    <div id="target-section" class="divider"></div>
-    <div class="text-center text-5xl pt-10">My Research Projects</div>
-    <div class="min-h-screen bg-base-300 flex lg:flex-row flex-col py-8 flex-wrap gap-4 justify-center items-center">
-        <div class="items-center">
-            <div class="px-8 pb-8">
-                <div class="card bg-base-100 w-90 h-100 shadow-sm">
-                    <figure class="bg-white p-8"><img class="object-fill w-75 h-40" src="./static/big_picture.png"
-                            alt="Shoes"></figure>
-                    <div class="card-body">
-                        <h2 class="card-title text-center">Compositional Semantics of Distributed Optimization</h2>
-                        <p class="text-justify">Formalizing how optimization problems compose and
-                            solution algorithms to exploit compositional structure.</p>
-                        <div class="card-actions justify-center"><button class="btn btn-primary">More Info</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="px-8 pb-8">
-                <div class="card bg-base-100 w-90 h-100 shadow-sm">
-                    <figure class="bg-white p-8"><img class="object-fill w-75 h-40" src="./static/control.jpg"
-                            alt="Shoes"></figure>
-                    <div class="card-body">
-                        <h2 class="card-title text-center">Compositional Frameworks for Control Systems</h2>
-                        <p class="text-justify">Building complex control problems from simpler
-                            pieces and optimal control of coupled systems.</p>
-                        <div class="card-actions justify-center"><button class="btn btn-primary">More Info</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="items-center">
-            <div class="px-8 pb-8">
-                <div class="card bg-base-100 w-90 h-100 shadow-sm">
-                    <figure class="bg-white p-8"><img class="object-fill w-75 h-40" src="./static/exploration.jpg"
-                            alt="Shoes"></figure>
-                    <div class="card-body">
-                        <h2 class="card-title text-center">Model Exploration and Rewriting</h2>
-                        <p class="text-justify">Exploration and rewriting algorithms for general classes
-                            of models including neural networks, relational databases, and ODE systems.</p>
-                        <div class="card-actions justify-center"><button class="btn btn-primary">More Info</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="px-8 pb-8">
-                <div class="card bg-base-100 w-90 h-100 shadow-sm">
-                    <figure class="bg-white p-8"><img class="object-fill w-75 h-40" src="./static/colored_graph.png"
-                            alt="Shoes"></figure>
-                    <div class="card-body">
-                        <h2 class="card-title text-center">Distributed Optimization on Cellular Sheaves</h2>
-                        <p class="text-justify">Developing algorithms and applications for homological programming.</p>
-                        <div class="card-actions justify-center"><button class="btn btn-primary">More Info</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div hx-boost="true" class="navbar bg-base-200 shadow-sm pl-10 pr-10 sticky top-0">
+		<div class="navbar-start">
+			<div class="dropdown">
+				<div tabindex="0" role="button" class="btn btn-ghost lg:hidden"><svg xmlns="http://www.w3.org/2000/svg"
+						class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							d="M4 6h16M4 12h8m-8 6h16"></path>
+					</svg></div>
+				<ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+					<li><a href="/about">About</a></li>
+					<li><a href="/projects">Projects</a></li>
+					<li><a href="/cv">CV</a></li>
+				</ul>
+			</div><!--<div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+				<div class="w-10 rounded-full ring-primary ring-offset-base-100 ring ring-offset-2">
+					<img
+						alt="Tailwind CSS Navbar component"
+						src="./static/drumming_profile.JPG"
+					/>
+				</div>
+			</div>--><a href="/" class="btn btn-ghost text-xl">Tyler Hanks</a>
+		</div>
+		<div class="navbar-center hidden lg:flex">
+			<ul class="menu menu-horizontal px-1">
+				<li><a href="/about">About</a></li>
+				<li><a href="/projects">Projects</a></li>
+				<li><a href="/cv">CV</a></li>
+			</ul>
+		</div>
+		<div class="navbar-end">
+			<div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+				<div class="w-10 rounded-full ring-primary ring-offset-base-100 ring ring-offset-2"><a href="/"><img
+							alt="Tailwind CSS Navbar component" src="./static/drumming_profile.JPG"></a></div>
+			</div>
+		</div>
+	</div>
+	<div class="hero bg-base-300 min-h-screen">
+		<div class="hero-content flex-col items-center lg:flex-row">
+			<div class="ring-primary ring-offset-base-100 rounded-lg ring-4"><img src="./static/drumming_profile.JPG"
+					class="max-w-sm rounded-lg shadow-2xl size-60 lg:size-80"></div>
+			<div class="p-4">
+				<h1 class="lg:text-4xl text-3xl font-bold text-center lg:text-left">Developing Compositional Approaches
+					to Optimization, Machine Learning, and Control Theory</h1>
+				<p class="prose pt-6 font-semibold">Email address: <a href="mailto:t.hanks@ufl.edu">t.hanks@ufl.edu</a>
+				</p>
+				<p class="prose font-semibold">Office: MAE 206</p>
+				<p class="py-6 text-justify">My name is Tyler Hanks, and I am a fourth year computer science PhD student
+					at the University of Florida. I work as a graduate research assistant in the GATAS Lab led by Dr.
+					James Fairbanks. My research goal is to make it easier for engineers to specify and solve complex
+					optimization, learning, and control problems and develop end-to-end distributed learning and control
+					pipelines. To achieve this goal, my research primarily focuses on applying category theory and sheaf
+					theory to develop novel frameworks and algorithms for distributed optimization, machine learning,
+					and optimal control. My research is funded by the NSF GRFP. Check out my research projects!</p>
+				<div class="px-4 py-2 flex justify-between">
+					<p class="text-center lg:text-left"><button class="btn btn-primary"
+							onclick="document.getElementById('target-section').scrollIntoView({behavior: 'smooth'})">Projects</button>
+					</p><a class="w-8" href="https://github.com/tylerhanks" target="_blank"
+						rel="noopener noreferrer"><img src="./static/github-mark-white.png"></a> <a class="w-8"
+						href="https://www.linkedin.com/in/tyler-hanks-b14026125/" target="_blank"
+						rel="noopener noreferrer"><img src="./static/In-White-72.png"></a> <a class="w-8"
+						href="https://www.instagram.com/tie_tyler_/" target="_blank" rel="noopener noreferrer"><img
+							src="./static/Instagram_Glyph_White.png"></a>
+				</div>
+			</div>
+		</div>
+	</div><!-- Add this target section -->
+	<div id="target-section" class="divider"></div>
+	<div class="text-center lg:text-4xl text-3xl pt-10">My Research Projects</div>
+	<div hx-boost="true"
+		class="min-h-screen bg-base-300 flex lg:flex-row flex-col py-8 flex-wrap gap-4 justify-center items-center">
+		<div class="items-center">
+			<div class="px-8 pb-8">
+				<div class="card bg-base-100 w-80 h-100 shadow-sm">
+					<figure class="bg-white p-6"><img class="object-fill w-90 h-35" src="./static/big_picture.png"
+							alt="Shoes"></figure>
+					<div class="card-body">
+						<h2 class="card-title text-center">Compositional Semantics of Distributed Optimization</h2>
+						<p class="text-justify">Formalizing how optimization problems compose and
+							solution algorithms to exploit compositional structure.</p>
+						<div class="card-actions justify-center"><button class="btn btn-primary"><a
+									href="/compositional-optimization">More Info</a></button></div>
+					</div>
+				</div>
+			</div>
+			<div class="px-8 pb-8">
+				<div class="card bg-base-100 w-80 h-100 shadow-sm">
+					<figure class="bg-white p-6"><img class="object-fill w-90 h-35" src="./static/colored_graph.png"
+							alt="Shoes"></figure>
+					<div class="card-body">
+						<h2 class="card-title text-center">Distributed Optimization on Cellular Sheaves</h2>
+						<p class="text-justify">Developing algorithms and applications for homological programming.</p>
+						<div class="card-actions justify-center"><button class="btn btn-primary"><a
+									href="/sheaf-optimization">More Info</a></button></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="items-center">
+			<div class="px-8 pb-8">
+				<div class="card bg-base-100 w-80 h-100 shadow-sm">
+					<figure class="bg-white p-6"><img class="object-fill w-90 h-35" src="./static/control.jpg"
+							alt="Shoes"></figure>
+					<div class="card-body">
+						<h2 class="card-title text-center">Compositional Frameworks for Control Systems</h2>
+						<p class="text-justify">Building complex control problems from simpler
+							pieces and optimal control of coupled systems.</p>
+						<div class="card-actions justify-center"><button class="btn btn-primary"><a
+									href="/compositional-control">More Info</a></button></div>
+					</div>
+				</div>
+			</div>
+			<div class="px-8 pb-8">
+				<div class="card bg-base-100 w-80 h-100 shadow-sm">
+					<figure class="bg-white p-6"><img class="object-fill w-90 h-35" src="./static/exploration.jpg"
+							alt="Shoes"></figure>
+					<div class="card-body">
+						<h2 class="card-title text-center">Model Exploration and Rewriting</h2>
+						<p class="text-justify">Exploration and rewriting algorithms for general classes
+							of models including neural networks, relational databases, and ODE systems.</p>
+						<div class="card-actions justify-center"><button class="btn btn-primary"><a
+									href="/modeling">More Info</a></button></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>
